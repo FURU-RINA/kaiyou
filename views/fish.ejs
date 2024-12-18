@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= places[id].name %></title>
+
+    <link rel="stylesheet" href="/public/fish.css">
+    <script>
+      const place = "<%= places[id].type %>";
+    </script>
+    <script src="/public/js/fish_data.js"></script>
+    <script src="/public/js/sakana.js"></script>
+    <script src="/public/js/group.js"></script>
+    <script src="/public/js/fish.js" defer></script>
+</head>
+<body>
+  <p class="title"><%= places[id].name %></p>
+  <div id="display">水深: 0M</div>
+  
+  <header class="name">
+      <ul>
+          <li><a href="#">名前 <span>▼</span></a>
+              <ul>
+                <div id="fish_name"></div>
+              </ul>
+          </li>
+      </ul>
+  </header>
+
+  <div class="menu">
+    <a href="/public/second.html"> 戻る </a>
+  </div>
+
+  <!-- 動かす画像を追加 -->
+  <div id="image-container"></div>
+
+
+  <script>
+    // fish_nameの表示
+    function showFishName(name) {
+      document.getElementById("fish_name").innerHTML = name;
+    }
+  </script>
+  </body>
+  </html>
+
+</body>
+</html>

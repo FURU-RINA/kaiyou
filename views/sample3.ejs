@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .red{
+      color:red
+    }
+  </style>
+  <title>海の中を見る</title>
+</head>
+<body>
+  <h2>海を選ぶ</h2>
+  <% for( let num in places ) { %>
+    <a href="/fish/<%= num %>"> <%= places[num].name %> </a><br>
+  <% } %>
+    <a href="/itirann"> 魚一覧 </a>
+</body>
+</html>
