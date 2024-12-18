@@ -1,0 +1,124 @@
+body{
+  background-color: aqua;
+}
+p.title {
+   position: fixed;
+  top: 5px;
+    font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+    color: blue;
+    font-size:4em;
+    line-height:80%;
+    margin: 0px;
+}
+
+body {
+  overflow: auto;
+  height: 2000vh; /* 高さを大きくしてスクロールできるように */
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 20000px; /* スクロールを確認するために高さを設定 */
+  transition: background-color 0.5s ease;
+}
+
+/* 数値の表示 */
+#display {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#fish_name {
+  position: fixed;
+  top: 240px;
+  left: 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+div.menu {
+  position:fixed;
+  top:1em;
+  left:10em;
+  border:1px solid;
+  padding:10px;
+  font-size: 2em;
+  line-height:100%;
+  font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+  color:#000000;
+  background-color:black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.moving-image {
+  position: absolute;
+  transition: transform 0.1s linear;
+}
+
+body{
+  height:2000px;
+  background: #f0ffff;
+  transition: 1s;
+}
+
+header{
+  margin-bottom: 13em;
+  position: fixed;
+  top: 170px;
+  left: 20px;
+  background-color: #444;
+}
+ul > li{
+  display: inline-block;
+}
+ul > li > a{
+  display: block;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+ul > li > span{
+  margin-left: 1.2em;
+}
+ul > li:hover > a{
+  background-color: #efefef;
+  color: #444;
+}
+
+ul li ul{
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+ul li ul li{
+  display: block;
+}
+ul li ul li a{
+  background-color: #efefef;
+  color: #444;
+}
+ul li ul li a:hover{
+  background-color: #ddd;
+}
+
+.name ul li ul{
+  display: none;
+}
+.name ul li:hover ul{
+  display: block;
+}

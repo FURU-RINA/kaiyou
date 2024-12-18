@@ -1,0 +1,80 @@
+const fish_data = {
+  tokyo: {
+    bottom: 1000,
+    fish: [
+      {
+        type: "ishidai",
+        name: "イシダイ",
+        depthm: 400,
+        depthM: 650,
+        number: 3,
+        z: 0,
+      },
+      {
+        type: "ishidai",
+        name: "",
+        depthm: 400,
+        depthM: 650,
+        number: 3,
+        z: 0,
+      },
+      {
+        type: "mahaze",
+        name: "マハゼ",
+        depthm: 210,
+        depthM: 220,
+        number: 5,
+        z: 0,
+      },
+      {
+        type: "mebaru",
+        name: "メバル",
+        depthm: 300,
+        depthM: 500,
+        number: 5,
+        z: 0,
+      },
+      {
+        type: "saba",
+        name: "サバ",
+        depthm: 400,
+        depthM: 1700,
+        number: 5,
+        z: 0,
+      },
+      {
+        type: "suzuki",
+        name: "スズキ",
+        depthm: 700,
+        depthM: 1000,
+        number: 5,
+        z: 0,
+      },
+      {
+        type: "suzuki",
+        name: "スズキ",
+        depthm: 700,
+        depthM: 1000,
+        number: 5,
+        z: 0,
+      },
+    ],
+  },
+  okinawa: {
+    bottom: 1000,
+    fish: [
+      {
+        type: "ishidai",
+        depth: 20,
+        number: 10,
+        z: 0,
+      },
+      {
+        type: "mahaze",
+        depth: 500,
+        number: 10,
+        z: 0,
+      },
+    ],
+  },
+};
