@@ -8,7 +8,7 @@ const fish_data = {
         depthm: 400,
         depthM: 650,
         number: 3,
-        z: 0,
+        z: 3,
       },
       {
         type: "ishidai",
@@ -16,7 +16,7 @@ const fish_data = {
         depthm: 400,
         depthM: 650,
         number: 3,
-        z: 0,
+        z: 2,
       },
       {
         type: "mahaze",
@@ -24,7 +24,7 @@ const fish_data = {
         depthm: 210,
         depthM: 220,
         number: 5,
-        z: 0,
+        z: 1,
       },
       {
         type: "mebaru",

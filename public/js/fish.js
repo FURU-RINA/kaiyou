@@ -20,12 +20,14 @@ window.addEventListener("scroll", function () {
   }
 });
 
+let here = [];
 // スクロールイベントを監視
 window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY; // 現在のスクロール位置を取得
   // スクロール位置を表示
   this.document.querySelector("#display").textContent =
     `水深: ${Math.floor(scrollPosition /10)}M`;
+  for( let g of here ) g.animate( scrollPosition );
 });
 
 console.log(place);
@@ -42,7 +44,7 @@ for (let f of fish_data[place].fish) {
 }
 console.log(fish_name);
 
-let here = [];
+
 for (let g of fish_data[place].fish) {
   here.push(new group(g));
 }
