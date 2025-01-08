@@ -1,6 +1,6 @@
-body{
+/* body{
   background-color: aqua;
-}
+} */
 p.title {
    position: fixed;
   top: 5px;
@@ -12,32 +12,27 @@ p.title {
 }
 
 body {
+  overflow: hidden;
+}
+/* body {
   overflow: auto;
-  height: 2000vh; /* 高さを大きくしてスクロールできるように */
+  height: 2000vh; /* 高さを大きくしてスクロールできるように *
   width: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-}
+} */
 
 .container {
   height: 20000px; /* スクロールを確認するために高さを設定 */
   transition: background-color 0.5s ease;
 }
 
+
+
 /* 数値の表示 */
 #display {
   position: fixed;
   top: 100px;
-  left: 20px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-#fish_name {
-  position: fixed;
-  top: 240px;
   left: 20px;
   font-size: 24px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -63,11 +58,6 @@ div.menu {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.moving-image {
-  position: absolute;
-  transition: transform 0.1s linear;
 }
 
 body{
@@ -121,4 +111,52 @@ ul li ul li a:hover{
 }
 .name ul li:hover ul{
   display: block;
+}
+
+.fish-name {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の背景 */
+  border-radius: 5px;
+  visibility: hidden; /* 初期状態では非表示 */
+  transform: translateX(50%); 
+  transform: translateY(80%); 
+  white-space: nowrap; /* 名前が折り返さないように */
+}
+
+/* 魚画像にマウスオーバーした時の画像の効果 */
+.moving-image {
+  position: absolute;
+  z-index: 100;
+  transition: transform 0.1s linear, filter 0.3s ease-in-out; /* 明るさの変化をスムーズに */
+}
+
+/* .abs {
+  position: absolute;
+} */
+
+#parent {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  z-index: 200;
+}
+
+#image-container {
+  overflow: scroll;
+  height: 20000px;
+  z-index: 3;
+  position: absolute;
+}
+
+#z2 {
+  z-index: 2;
+}
+
+#z1 {
+  z-index: 1;
 }
