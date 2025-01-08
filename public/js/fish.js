@@ -1,5 +1,4 @@
 const imageContainer = document.querySelector("#image-container");
-const parent = document.querySelector('#parent');
 
 let windowWidth = window.innerWidth; // 初期ウィンドウの幅を保持
 let windowHeight = window.innerHeight; // 初期ウィンドウの高さを保持
@@ -22,23 +21,11 @@ window.addEventListener("scroll", function () {
 });
 
 // スクロールイベントを監視
-parent.addEventListener("scroll",  () => {
-  const scrollTop = parent.scrollTop;
-  const scrollHeight = parent.scrollHeight;
-  const clientHiehgt = parent.clientHight;
-
-  console.log( scrollTop );
-
-  this.document.querySelector('#image-container').style.transform = `translateY(${scrollTop}px)`;
-  this.document.querySelector('#z1').style.transform = `translateY(${Math.ceil(scrollTop*0.6)}px)`;
-  this.document.querySelector('#z2').style.transform = `translateY(${Math.ceil(scrollTop*0.4)}px)`;
-  // let scrollPosition = parent.scrollY; // 現在のスクロール位置を取得
-  // // スクロール位置を表示
-  // this.document.querySelector("#display").textContent =
-  //   `水深: ${Math.floor(scrollPosition /10)}M`;
-  //   this.document.querySelector('#z1').style.backgourndPositionY = scrollPosition * 0.6 + "px";
-  //   this.document.querySelector('#z2').style.backgourndPositionY = scrollPosition * 0.4 + "px";
-
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY; // 現在のスクロール位置を取得
+  // スクロール位置を表示
+  this.document.querySelector("#display").textContent =
+    `水深: ${Math.floor(scrollPosition /10)}M`;
 });
 
 console.log(place);
