@@ -46,6 +46,10 @@ body {
   border-radius: 5px;
 }
 
+#image-container {
+  position: absolute;
+}
+
 div.menu {
   position:fixed;
   top:1em;

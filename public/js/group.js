@@ -59,9 +59,9 @@ class group {
     imageContainer.appendChild(imgR);
   }
   
-  animate() {
+  animate(offsetY) {
     for (let f of this.fish) {
-      f.animate();
+      f.animate(offsetY);
     }
   }
 }
