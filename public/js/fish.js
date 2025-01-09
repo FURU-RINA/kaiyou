@@ -7,7 +7,7 @@ window.addEventListener("scroll", function () {
   //スクロールの高さを取得
   let scroll = (window.scrollY / 100) * 50;
 
-  if (scroll < 50) {
+  if (scroll < 10) {
     document.body.style.backgroundColor = "#e0ffff";
   } else if (scroll < 300) {
     document.body.style.backgroundColor = "#00bfff";
@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY; // 現在のスクロール位置を取得
   // スクロール位置を表示
   this.document.querySelector("#display").textContent =
-    `水深: ${Math.floor(scrollPosition /10)}M`;
+    `水深: ${Math.floor(scrollPosition )}M`;
   for( let g of here ) g.animate( scrollPosition );
 });
 

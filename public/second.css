@@ -32,11 +32,21 @@ body{
   }
   .URL1 img{
       width: 100%;
+      height: 100%;
       transition-duration: 0.5s;
   }
   .URL1:hover img{
       transform: scale(1.2);
       transition-duration: 0.5s;
+  }
+  .text {
+    position: absolute;
+    top: 50%;      /* 縦の中央に配置 */
+    left: 50%;     /* 横の中央に配置 */
+    transform: translate(-50%, -50%); /* 完全に中央にするための補正 */
+    color: white;  /* 文字色 */
+    font-size: 24px; /* 文字サイズ */
+    font-weight: bold; /* 文字の太さ */
   }
   
   div.URL2 {

@@ -13,6 +13,7 @@ class group {
         number: this.number,
         y: depth,
         z: g.z,
+        width: g.width,
         image: [
           "/public/fish/" + g.type + "L.png",
           "/public/fish/" + g.type + "R.png",
@@ -28,15 +29,7 @@ class group {
 
     // 画像を追加して表示
     const imgL = document.createElement('img');
-    imgL.src = "/public/fish/" + this.type + "L.png";
-    imgL.alt = fishName;
-    imgL.style.width = '50px';  // サイズ調整
-
     const imgR = document.createElement('img');
-    imgR.src = "/public/fish/" + this.type + "R.png";
-    imgR.alt = fishName;
-    imgR.style.width = '50px';  // サイズ調整
-
     // 画像にマウスオーバーイベントを追加
     imgL.addEventListener('mouseover', () => {
       showFishName(fishName);  // 名前を表示
