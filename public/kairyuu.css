@@ -2,19 +2,41 @@ body{
     background-color: aqua;
   }
   
-  div.imgt {
+  div.imgt1 {
    position:absolute;
-   top:50vh;
-   left:50vw;
-   transform: translate(-50%, -50%);
+   top:-2em;
+   left:20em;
    padding: 0px;
   }
-  div.imgt img {
-    max-width: 200%; /* 画像の最大幅を親要素に合わせる */
-    max-height: 200%; /* 画像の最大高さを親要素に合わせる */
-    object-fit: contain; /* 比率を保ちながら親要素にフィットさせる */
+  div.imgt2 {
+   position:absolute;
+   top:1em;
+   left:15em;
+   transform: rotate(15deg);
+   padding: 0px;
   }
-
+  div.imgt3 {
+   position:absolute;
+   top:-8em;
+   left:30em;
+   transform: rotate(18deg);
+   padding: 0px;
+  }
+  div.imgt4 {
+   position:absolute;
+   top:1em;
+   left:28em;
+   transform: rotate(10deg);
+   padding: 0px;
+  }
+  div.imgt5 {
+   position:absolute;
+   top:10em;
+   left:-20em;
+   transform: rotate(-8deg);
+   padding: 0px;
+  }
+  
   div.url1 {
    position:absolute;
    top:27em;
@@ -32,30 +54,19 @@ body{
     position:absolute;
      top:5em;
      left:1em;
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     margin: 0 auto;
     cursor: pointer;
   }
   .URL1 img{
-      width: 100%;
-      height: 100%;
-      transition-duration: 0.5s;
+    width: 100%;
+    transition-duration: 0.5s;
   }
   .URL1:hover img{
-      transform: scale(1.2);
-      transition-duration: 0.5s;
+    transform: scale(1.0);
+    transition-duration: 0.5s;
   }
-  .text {
-    position: absolute;
-    top: 50%;      /* 縦の中央に配置 */
-    left: 50%;     /* 横の中央に配置 */
-    transform: translate(-50%, -50%); /* 完全に中央にするための補正 */
-    color: white;  /* 文字色 */
-    font-size: 24px; /* 文字サイズ */
-    font-weight: bold; /* 文字の太さ */
-  }
-  
   div.URL2 {
     position:absolute;
      top:17em;

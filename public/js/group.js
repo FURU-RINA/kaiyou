@@ -15,8 +15,8 @@ class group {
         z: g.z,
         width: g.width,
         image: [
-          "/public/fish/" + g.type + "L.png",
           "/public/fish/" + g.type + "R.png",
+          "/public/fish/" + g.type + "L.png",
         ],
       };
       this.fish.push(new Sakana(spec));

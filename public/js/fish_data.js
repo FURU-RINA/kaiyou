@@ -6,8 +6,17 @@ const fish_data = {
         type: "iwa1",
         name: "",
         depthm: 300,
-        depthM: 600, 
-        number: 1,
+        depthM: 1000, 
+        number: 3,
+        z: 3,
+        width: 340,
+      },
+      {
+        type: "iwa2",
+        name: "",
+        depthm: 800,
+        depthM: 2000, 
+        number: 4,
         z: 3,
         width: 340,
       },
@@ -107,6 +116,15 @@ const fish_data = {
         width: 340,
       },
       {
+        type: "sango",
+        depthm: 300,
+        depthM: 600,
+        number: 1,
+        z: 3,
+        number: 1,
+        width: 340,
+      },
+      {
         type: "pinksago",
         depthm: 300,
         depthM: 600,
@@ -114,7 +132,7 @@ const fish_data = {
         number: 1,
         width: 200,
       },
-      {
+      /*{
         type: "isogi",
         depthm: 300,
         depthM: 600,
@@ -122,7 +140,7 @@ const fish_data = {
         z: 3,
         number: 1,
         width: 150,
-      },
+      },*/
       {
         type: "ishidai",
         depth: 20,

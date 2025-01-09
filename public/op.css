@@ -1,185 +1,180 @@
-body{
-    background-color: blue;
-  }
-  
-  .sample {
-    position:relative;
-    overflow:hidden;
-    box-shadow:0 4px 20px rgba(0, 0, 0, 0.2);
-    margin:0 auto;
-    width:1500px;
-    height:800px;
-    background-color:#3168dd;
-  }
-  
-    .sample::before,
-    .sample::after {
-      position:absolute;
-      left:-50%;
-      width:100%;
-      height:50%;
-      content:"";
-      background-color:#fff;
-      animation:wave linear 6s infinite;
-    }
-  
-    .sample::before {
-      top:-150%;
-      border-radius:50% 50% / 50% 70%;
-    }
-  
-    .sample::after {
-      top:-146%;
-      border-radius:30% 70% / 30% 50%;
-      opacity:0.2;
-      animation-delay:0.4s;
-    }
-  
-  @keyframes wave {
-    from {
-      transform:rotate(0deg);
-    }
-    to {
-      transform:rotate(360deg);
-    }
-  }
-  
-  .animation{
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 2s;
-    width: 160px
-  }
-  .animation1{
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-duration: 10s;
-    width: 390px
-  }
-  .animation2{
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-duration: 7s;
-    width: 380px;
-  }
-  .animation3{
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-duration: 7s;
-    width: 380px;
-  }
-  
-  div.menu {
+.sample {
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0, 0, 0, 0.2);
+  width:100vw;
+  height:100vh;
+  background-color:#3168dd;
+}
+
+  .sample::before,
+  .sample::after {
     position:absolute;
-    top:15em;
-    left:16em;
-    border:1px solid;
-    padding:10px;
-    font-size: 2em;
-    line-height:100%;
-    font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
-    color:#cccccc;
-    background-color:yellow;
+    left:-20%;
+    width:125%;
+    height:130%;
+    content:"";
+    background-color:#fff;
+    animation:wave linear 6s infinite;
   }
-  
-  div.imgt {
-     position:absolute;
-     top:17em;
-     left:44em;
-     padding:0px;
+
+  .sample::before {
+    top:-160%;
+    border-radius:50% 50% / 50% 70%;
   }
-  
-  div.imgt2 {
-     position:absolute;
-     top:15em;
-     left:30em;
-     padding:0px;
+
+  .sample::after {
+    top:-156%;
+    border-radius:30% 70% / 30% 50%;
+    opacity:0.2;
+    animation-delay:0.4s;
   }
-  
-  div.imgt1 {
-     position:absolute;
-     top:6em;
-     left:17em;
-     padding:0px;
+
+@keyframes wave {
+  from {
+    transform:rotate(0deg);
   }
-  
-  div.imgt3 {
-     position:absolute;
-     top:8em;
-     left:31em;
-     padding:0px;
+  to {
+    transform:rotate(360deg);
   }
-  
-  .keyframe1{
-    animation-name: anim_v;
+}
+
+.animation{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  width: 320px
+}
+.animation1{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  width: 780px
+}
+.animation2{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  width: 760px;
+}
+.animation3{
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 7s;
+  width: 760px;
+}
+
+div.menu {
+  position:absolute;
+  top:70vh;
+  left:43vw;
+  border:1px solid;
+  padding:10px;
+  font-size: 2em;
+  line-height:100%;
+  font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+  color:#cccccc;
+  background-color:yellow;
+}
+
+div.imgt {
+   position:absolute;
+   top:37vh;
+   left:50vw;
+   padding:0px;
+}
+
+div.imgt2 {
+   position:absolute;
+   top:35vh;
+   left:29vw;
+   padding:0px;
+}
+
+div.imgt1 {
+   position:absolute;
+   top:6vh;
+   left: 11vw;
+   padding:0px;
+}
+
+div.imgt3 {
+   position:absolute;
+   top:12vh;
+   left:34vw;
+   padding:0px;
+}
+
+.keyframe1{
+  animation-name: anim_v;
+}
+
+.keyframe6 {
+  animation-name: poyopoyo;
+}
+
+.keyframe7 {
+  animation-name: pikapika;
+}
+
+.slidein {
+  animation-name: slidein;
+  animation-direction: normal;
+}
+
+
+@keyframes slidein {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
   }
-  
-  .keyframe6 {
-    animation-name: poyopoyo;
+  50%{
+    transform: translateX(60px);
+    opacity: 0;
   }
-  
-  .keyframe7 {
-    animation-name: pikapika;
+  100% {
+    transform: translateX(0);
   }
-  
-  .slidein {
-    animation-name: slidein;
-    animation-direction: normal;
+  75%,100% {
+    opacity: 1;
   }
-  
-  
-  @keyframes slidein {
-    0% {
-      transform: translateX(120px);
-      opacity: 0;
-    }
-    50%{
-      transform: translateX(60px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-    }
-    75%,100% {
-      opacity: 1;
-    }
+}
+
+@keyframes poyopoyo {
+  0%, 9%{
+    opacity: 0;
   }
-  
-  @keyframes poyopoyo {
-    0%, 9%{
-      opacity: 0;
-    }
-    10%{
-      transform: scale(1.5);
-    }
-    20%, 30%, 50%, 65%, 80%, 90%, 100%{
-      opacity: 1;
-      transform: scale(1.0);
-    }
-    25%, 40%, 60%, 70%, 85%, 95%{
-      transform: scale(0.95);
-      opacity: 1;
-    }
+  10%{
+    transform: scale(1.5);
   }
-  
-  @keyframes pikapika {
-    0%,69%,80%,97%{
-      opacity: 0;
-    }
-    70%,92%,100%{
-      opacity: 1;
-    }
+  20%, 30%, 50%, 65%, 80%, 90%, 100%{
+    opacity: 1;
+    transform: scale(1.0);
   }
-  
-  @keyframes anim_v {
-    0% {
-      transform: translate(0, 0px);
-    }
-    100% {
-      transform: translate(0, 30px);
-    }
+  25%, 40%, 60%, 70%, 85%, 95%{
+    transform: scale(0.95);
+    opacity: 1;
   }
+}
+
+@keyframes pikapika {
+  0%,69%,80%,97%{
+    opacity: 0;
+  }
+  70%,92%,100%{
+    opacity: 1;
+  }
+}
+
+@keyframes anim_v {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, 30px);
+  }
+}

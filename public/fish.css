@@ -35,16 +35,6 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
-#fish_name {
-  position: fixed;
-  top: 240px;
-  left: 20px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
 
 #image-container {
   position: absolute;
@@ -125,4 +115,15 @@ ul li ul li a:hover{
 }
 .name ul li:hover ul{
   display: block;
+}
+
+#fish_name {
+  position: fixed;
+  top: 240px;
+  left: 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
