@@ -10,21 +10,23 @@ body{
    padding: 0px;
   }
   div.imgt img {
-    max-width: 200%; /* 画像の最大幅を親要素に合わせる */
-    max-height: 200%; /* 画像の最大高さを親要素に合わせる */
+    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+    max-height: 100%; /* 画像の最大高さを親要素に合わせる */
     object-fit: contain; /* 比率を保ちながら親要素にフィットさせる */
   }
 
   div.url1 {
    position:absolute;
-   top:27em;
-   left:46.3em;
+   top:55vh;
+   left:54vw;
+   transform: translate(-50%, -50%);
    padding: 0px;
   }
   div.url2 {
    position:absolute;
-   top:48em;
-   left:22em;
+   top:95vh;
+   left:25vw;
+   transform: translate(-50%, -50%);
    padding: 0px;
   }
   
