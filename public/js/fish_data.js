@@ -40,7 +40,7 @@ const fish_data = {
       },
       {
         type: "ishidai",
-        name: "イシダイ",
+        name: "クロダイ",
         depthm: 400,
         depthM: 650,
         number: 3,
@@ -80,7 +80,7 @@ const fish_data = {
         depthm: 220,
         depthM: 270,
         number: 10,
-        z: 0,
+        z: 4,
         width: 74,
       },
       {
