@@ -103,7 +103,7 @@ body{
     left: 50%;     /* 横の中央に配置 */
     transform: translate(-50%, -50%); /* 完全に中央にするための補正 */
     color: black;  /* 文字色 */
-    font-size: 28px; /* 文字サイズ */
+    font-size: 24px; /* 文字サイズ */
     font-weight: bold; /* 文字の太さ */
   }
   

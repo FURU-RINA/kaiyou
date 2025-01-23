@@ -1,207 +1,206 @@
-body{
+body {
     background-color: aqua;
   }
   
+  /* 画像のスタイル */
+  div.imgt, div.imgt2, div.imgt3, div.imgt4, div.imgt5 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+  
   div.imgt {
-    position:absolute;
-    top:50vh;
-    left:50vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-
+    top: 50vh;
+    left: 50vw;
+  }
+  
   div.imgt2 {
-   position:absolute;
-   top:65vh;
-   left:40vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
-  }
-  div.imgt3 {
-   position:absolute;
-   top:25vh;
-   left:65vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
-  }
-  div.imgt4 {
-   position:absolute;
-   top:45vh;
-   left:50vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
-  }
-  div.imgt5 {
-   position:absolute;
-   top:57vh;
-   left:40vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
-  }
-  
-  div.imgt img {
-    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
-    max-height: 100%; /* 画像の最大高さを親要素に合わせる */
-    object-fit: contain; /* 比率を保ちながら親要素にフィットさせる */
-  }
-
-  div.url0 {
-    position:absolute;
-    top:8vh;
-    left:65vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-   div.url1 {
-    position:absolute;
-    top:42vh;
-    left:59vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-  div.url2 {
-   position:absolute;
-   top:55vh;
-   left:54vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
-  }
-  div.url3 {
-    position:absolute;
-    top:57vh;
-    left:53vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-   div.url4 {
-    position:absolute;
-    top:58vh;
-    left: 51vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-   div.url5 {
-    position:absolute;
-    top:48vh;
-    left: 49vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-   div.url6 {
-    position:absolute;
-    top:62vh;
+    top: 65vh;
     left: 40vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-   div.url7 {
-    position:absolute;
-    top:71vh;
-    left: 31vw;
-    transform: translate(-50%, -50%);
-    padding: 0px;
-   }
-  div.url8 {
-   position:absolute;
-   top:95vh;
-   left:25vw;
-   transform: translate(-50%, -50%);
-   padding: 0px;
   }
   
-  div.URL1 {
-    position:absolute;
-     top:5em;
-     left:1em;
+  div.imgt3 {
+    top: 25vh;
+    left: 65vw;
+  }
+  
+  div.imgt4 {
+    top: 45vh;
+    left: 50vw;
+  }
+  
+  div.imgt5 {
+    top: 57vh;
+    left: 40vw;
+  }
+  
+  /* 画像の最大幅と高さ */
+  div.imgt img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  /* 画像の比率を保ちながら親要素にフィット */
+  }
+  
+  /* URLの配置 */
+  div.url0, div.url1, div.url2, div.url3, div.url4, div.url5, div.url6, div.url7, div.url8 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+  
+  div.url0 { top: 8vh; left: 65vw; }
+  div.url1 { top: 42vh; left: 59vw; }
+  div.url2 { top: 55vh; left: 54vw; }
+  div.url3 { top: 57vh; left: 53vw; }
+  div.url4 { top: 58vh; left: 51vw; }
+  div.url5 { top: 48vh; left: 49vw; }
+  div.url6 { top: 62vh; left: 40vw; }
+  div.url7 { top: 71vh; left: 31vw; }
+  div.url8 { top: 95vh; left: 25vw; }
+  
+  /* URLボタン */
+  .URL1, .URL2, .URL3 {
+    position: absolute;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
     cursor: pointer;
+    margin: 0 auto;
   }
-  .URL1 img{
-      width: 100%;
-      height: 100%;
-      transition-duration: 0.5s;
+  
+  .URL1 img, .URL2 img, .URL3 img {
+    width: 100%;
+    transition-duration: 0.5s;
   }
-  .URL1:hover img{
-      transform: scale(1.2);
-      transition-duration: 0.5s;
+  
+  .URL1:hover img, .URL2:hover img, .URL3:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
   }
+  
+  /* 説明テキスト */
   .text {
     position: absolute;
-    top: 50%;      /* 縦の中央に配置 */
-    left: 50%;     /* 横の中央に配置 */
-    transform: translate(-50%, -50%); /* 完全に中央にするための補正 */
-    color: black;  /* 文字色 */
-    font-size: 28px; /* 文字サイズ */
-    font-weight: bold; /* 文字の太さ */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
   }
   
-  div.URL2 {
-    position:absolute;
-     top:17em;
-     left:1em;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    cursor: pointer;
-    }
-  .URL2 img{
-    width: 100%;
-    transition-duration: 0.5s;
-  }
-  .URL2:hover img{
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-  }
-  div.URL3 {
-    position:absolute;
-     top:29em;
-     left:1em;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-  .URL3 img{
-    width: 100%;
-    transition-duration: 0.5s;
-  }
-  .URL3:hover img{
-    transform: scale(1.2);
-    transition-duration: 0.5s;
+  /* 各画像のテキスト位置 */
+  .t2 { top: 40px; left: 35%; }
+  .t3 { bottom: 10px; right: 7%; }
+  .t4 { top: 25%; left: 73%; transform: translateX(-50%); }
+  .t5 { top: 80vh; left: 65%; }
+  
+  /* ドロップダウンメニュー */
+ul li ul {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: none;
+    z-index: 20; /* ドロップダウンが他の要素より前面に表示されるように */
   }
   
-  /* 対馬海流のテキスト位置 */
-.t2 {
-    top: 40px; 
-    left: 35%; 
+  ul li:hover ul {
+    display: block;
+    background-color: #efefef;
+    z-index: 20; /* ホバー時に表示されるメニュー */
   }
   
-  /* リマン海流のテキスト位置 */
-  .t3 {
-    bottom: 10px; /* 下部から10pxの位置 */
-    right: 7%; /* 右から15%の位置 */
+  /* 説明文のスタイル */
+  .ex {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;  /* 横幅を広げる */
+    font-size: 14px;
+    margin-top: 5px;
+    z-index: 30;  /* さらに前面に表示 */
   }
   
-  /* 親潮のテキスト位置 */
-  .t4 {
-    top: 25%; /* 画像の中間より少し上 */
-    left: 73%; /* 左から50%の位置 */
-    transform: translateX(-50%); /* テキストを中央揃え */
+  .text ul li:hover .ex {
+    display: block;
+    top: 100%;  /* 親要素の下に表示 */
   }
   
-  /* 黒潮のテキスト位置 */
-  .t5 {
-    top: 80vh; /* 画像の下部から20%の位置 */
-    left: 65%; /* 左から5%の位置 */
+  
+  /* 各画像の位置 */
+  div.URL1 { top: 5em; left: 1em; }
+  div.URL2 { top: 17em; left: 1em; }
+  div.URL3 { top: 29em; left: 1em; }
+  
+  /* 固定されたメニューバー */
+  header {
+    margin-bottom: 13em;
+    position: fixed;
+    top: 170px;
+    left: 20px;
+    background-color: #444;
   }
   
+  ul > li {
+    display: inline-block;
+  }
+  
+  ul > li > a {
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+  
+  ul > li > span {
+    margin-left: 1.2em;
+  }
+  
+  ul > li:hover > a {
+    background-color: #efefef;
+    color: #444;
+  }
+  
+  ul li ul li a {
+    background-color: #efefef;
+    color: #444;
+  }
+  
+  ul li ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  /* 説明文のスタイル */
+  .ex {
+    display: none;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .text ul li:hover .ex {
+    display: block;
+  }
+  
+  #ex {
+    position: fixed;
+    top: 40px;
+    left: 35%;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
   
   p.title {
-    font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+    font-family: 'Arial Black', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', Meiryo, 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
     color: #eaf4fc;
-    font-size:4em;
-    line-height:80%;
+    font-size: 4em;
+    line-height: 80%;
     margin: 0px;
   }
+  
