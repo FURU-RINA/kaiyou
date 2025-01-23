@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY; // 現在のスクロール位置を取得
   // スクロール位置を表示
   this.document.querySelector("#display").textContent =
-    `水深: ${Math.floor(scrollPosition /10 - 20
+    `水深: ${Math.floor(scrollPosition /10
     )}M`;
   for( let g of here ) g.animate( scrollPosition );
 });

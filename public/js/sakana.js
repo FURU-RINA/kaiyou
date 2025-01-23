@@ -17,7 +17,7 @@ class Sakana {
     this.x = [Math.random() * (windowWidth - 200) + 100,
       Math.random() * (windowWidth - 200) + 100,
       Math.random() * (windowWidth - 200) + 100,
-      back_x[rn],100 ][this.z];// x: 100px 〜 (windowWidth - 100px) の範囲
+      back_x[rn],Math.random() * 350 + 100 ][this.z];// x: 100px 〜 (windowWidth - 100px) の範囲
 if( this.z == 3 ) console.log( {ar: back_x,  rnd: rn, x: back_x[rn] });
     this.img.src = this.images[this.direction];
     this.img.style.left = `${this.x}px`;

@@ -79,7 +79,7 @@ const fish_data = {
         name: "ゴンズイ",
         depthm: 220,
         depthM: 270,
-        number: 10,
+        number: 25,
         z: 4,
         width: 74,
       },
