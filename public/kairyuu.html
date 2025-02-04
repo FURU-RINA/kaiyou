@@ -1,133 +1,92 @@
 <!doctype html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本の海</title>
-    <link rel="stylesheet" href="kairyuu.css" />
+    <link rel="stylesheet" href="kairyuu.css">
   </head>
   <body>
     <p class="title">日本の海</p>
+
     <div class="imgt">
-        <img src="日本地図.png" alt="地図">
+      <img src="日本地図海流.png" alt="日本地図">
     </div>
 
-    <div class="imgt2">
-        <img src="対馬.png" ><br />
-        <header class="text t2">
+    <!-- 海流名表示 -->
+    <div class="text t2">
+      <ul>
+        <li>
+          <a href="#">対馬海流 <span>▼</span></a>
           <ul>
-            <li>
-              <a href="#">対馬海流 <span>▼</span></a>
-              <ul>
-                <li><a class="ex" href="#">暖流に関する説明文</a></li> <!-- ここに説明文を追加 -->
-              </ul>
-            </li>
+            <li><a class="ex" href="#">日本海側を流れる暖流</a></li>
           </ul>
-        </header>
+        </li>
+      </ul>
     </div>
-    <div class="imgt2">
-        <img src="対馬.png"><br />
-        <header class="text t2">
-          <ul>
-            <li>
-              <a href="#">対馬海流 <span>▼</span></a>
-              <ul>
-                <li><a class="ex" href="#">暖流に関する説明文がここに表示されます。</a></li>
-              </ul>
-            </li>
-          </ul>
-        </header>
-      </div>
-      
-      <!-- imgt3: リマン海流 -->
-      <div class="imgt3">
-        <img src="リマン.png"><br />
-        <header class="text t3">
-          <ul>
-            <li>
-              <a href="#">リマン海流 <span>▼</span></a>
-              <ul>
-                <li><a class="ex" href="#">リマン海流の説明文がここに表示されます。</a></li>
-              </ul>
-            </li>
-          </ul>
-        </header>
-      </div>
-      
-      <!-- imgt4: 親潮 -->
-      <div class="imgt4">
-        <img src="親潮.png"><br />
-        <header class="text t4">
-          <ul>
-            <li>
-              <a href="#">親潮 <span>▼</span></a>
-              <ul>
-                <li><a class="ex" href="#">親潮の説明文がここに表示されます。</a></li>
-              </ul>
-            </li>
-          </ul>
-        </header>
-      </div>
-      
-      <!-- imgt5: 黒潮 -->
-      <div class="imgt5">
-        <img src="黒潮.png"><br />
-        <header class="text t5">
-          <ul>
-            <li>
-              <a href="#">黒潮 <span>▼</span></a>
-              <ul>
-                <li><a class="ex" href="#">黒潮の説明文がここに表示されます。</a></li>
-              </ul>
-            </li>
-          </ul>
-        </header>
-      </div>
-    
-    <div class="url0">
-        <a href="/fish/0"><img src="魚目印.png" alt="オホーツク海"width="50" height="50"></a>
-      </div>
-      <div class="url1">
-        <a href="/fish/1"><img src="魚目印.png" alt="三陸の海"width="50" height="50"></a>
-      </div>
-      <div class="url2">
-        <a href="/fish/2"><img src="魚目印.png" alt="東京湾"width="50" height="50"></a>
-      </div>
-      <div class="url3">
-        <a href="/fish/3"><img src="魚目印.png" alt="相模湾"width="50" height="50"></a>
-      </div>
-      <div class="url4">
-        <a href="/fish/4"><img src="魚目印.png" alt="駿河湾"width="50" height="50"></a>
-      </div>
-      <div class="url5">
-        <a href="/fish/5"><img src="魚目印.png" alt="富山湾"width="50" height="50"></a>
-      </div>
-      <div class="url6">
-        <a href="/fish/6"><img src="魚目印.png" alt="瀬戸内海"width="50" height="50"></a>
-      </div>
-      <div class="url7">
-        <a href="/fish/7"><img src="魚目印.png" alt="有明海"width="50" height="50"></a>
-      </div>
-      <div class="url8">
-        <a href="/fish/8"><img src="魚目印.png" alt="沖縄"width="50" height="50"></a>
-      </div>
 
-      <div class="URL1">
+    <div class="text t3">
+      <ul>
+        <li>
+          <a href="#">リマン海流 <span>▼</span></a>
+          <ul>
+            <li><a class="ex" href="#">日本海側を流れる暖流</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text t4">
+      <ul>
+        <li>
+          <a href="#">黒潮 <span>▼</span></a>
+          <ul>
+            <li><a class="ex" href="#">太平洋側を流れる暖流。親潮とぶつかることで潮目を作る</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text t5">
+      <ul>
+        <li>
+          <a href="#">親潮 <span>▼</span></a>
+          <ul>
+            <li><a class="ex" href="#">太平洋側を流れる寒流。黒潮とぶつかることで潮目を作る。プランクトンを多く含む。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- その他のURLボタン -->
+    <div class="url0"><a href="/fish/0"><img src="魚目印.png" alt="オホーツク海" width="50" height="50" /></a></div>
+    <div class="url1"><a href="/fish/1"><img src="魚目印.png" alt="三陸の海" width="50" height="50" /></a></div>
+    <div class="url2"><a href="/fish/2"><img src="魚目印.png" alt="東京湾" width="50" height="50" /></a></div>
+    <div class="url3"><a href="/fish/3"><img src="魚目印.png" alt="相模湾" width="50" height="50" /></a></div>
+    <div class="url4"><a href="/fish/4"><img src="魚目印.png" alt="駿河湾" width="50" height="50" /></a></div>
+    <div class="url5"><a href="/fish/5"><img src="魚目印.png" alt="富山湾" width="50" height="50" /></a></div>
+    <div class="url6"><a href="/fish/6"><img src="魚目印.png" alt="瀬戸内海" width="50" height="50" /></a></div>
+    <div class="url7"><a href="/fish/7"><img src="魚目印.png" alt="有明海" width="50" height="50" /></a></div>
+    <div class="url8"><a href="/fish/8"><img src="魚目印.png" alt="沖縄" width="50" height="50" /></a></div>
+
+    <div class="URL1">
         <a href="/public/second.html">
           <img src="wave.png" alt="海流">
-          <div class="text">消す</div>
+          <div class="text1">戻る</div>
         </a>
       </div>
       <div class="URL2">
         <a href="/public/sumple.html">
           <img src="wave.png" alt="海域">
-          <div class="text">海域</div>
+          <div class="text1">海域</div>
         </a>
       </div>
       <div class="URL3">
-        <a href="/public/sumple.html">
+        <a href="/public/tikei.html">
           <img src="wave.png" alt="地形">
-          <div class="text">地形</div>
+          <div class="text1">地形</div>
         </a>
       </div>
 
-  </body>
+    </body>
 </html>

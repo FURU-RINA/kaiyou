@@ -1,15 +1,6 @@
 body{
   background-color: aqua;
 }
-p.title {
-   position: fixed;
-  top: 5px;
-    font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
-    color: blue;
-    font-size:4em;
-    line-height:80%;
-    margin: 0px;
-}
 
 body {
   overflow: auto;
@@ -22,18 +13,6 @@ body {
 .container {
   height: 20000px; /* スクロールを確認するために高さを設定 */
   transition: background-color 0.5s ease;
-}
-
-/* 数値の表示 */
-#display {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 #image-container {
@@ -121,6 +100,27 @@ ul li ul li a:hover{
 #fish_name {
   position: fixed;
   top: 240px;
+  left: 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p.title {
+  position: fixed;
+ top: 5px;
+   font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+   color: blue;
+   font-size:4em;
+   line-height:80%;
+   margin: 0px;
+}
+
+#display {
+  position: fixed;
+  top: 100px;
   left: 20px;
   font-size: 24px;
   background-color: rgba(0, 0, 0, 0.5);

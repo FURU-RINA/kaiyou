@@ -15,8 +15,6 @@
     <script defer src="/public/js/fish.js" defer></script>
 </head>
 <body>
-  <p class="title"><%= places[id].name %></p>
-  <div id="display">水深: 0M</div>
   
 <!-- 動かす画像を追加 -->
 <div id="image-container"></div>
@@ -31,6 +29,8 @@
           </li>
       </ul>
   </header>
+  <p class="title"><%= places[id].name %></p>
+  <div id="display">水深: 0M</div>
 
   <div class="menu">
     <a href="/public/second.html"> 戻る </a>
