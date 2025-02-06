@@ -5,12 +5,12 @@ body{
   div.imgt {
    position:absolute;
    top:50vh;
-   left:50vw;
+   left:45vw;
    transform: translate(-50%, -50%);
    padding: 0px;
   }
   div.imgt img {
-    max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+    max-width: 120%; /* 画像の最大幅を親要素に合わせる */
     max-height: 100%; /* 画像の最大高さを親要素に合わせる */
     object-fit: contain; /* 比率を保ちながら親要素にフィットさせる */
   }

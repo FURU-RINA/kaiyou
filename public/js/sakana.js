@@ -12,11 +12,11 @@ class Sakana {
     this.z = spec.z;
     this.width = spec.width;
     this.direction = Math.floor(Math.random() * 2.0);
-    const back_x = [ -3, windowWidth - this.width ];
+    const back_x = [ -3, windowWidth - 2*this.width ];
     const rn = this.direction;
-    this.x = [Math.random() * (windowWidth - 200) + 100,
-      Math.random() * (windowWidth - 200) + 100,
-      Math.random() * (windowWidth - 200) + 100,
+    this.x = [Math.random() * (windowWidth - 500) + 100,
+      Math.random() * (windowWidth - 500) + 100,
+      Math.random() * (windowWidth - 500) + 100,
       back_x[rn],Math.random() * 350 + 100 ][this.z];// x: 100px 〜 (windowWidth - 100px) の範囲
 if( this.z == 3 ) console.log( {ar: back_x,  rnd: rn, x: back_x[rn] });
     this.img.src = this.images[this.direction];
